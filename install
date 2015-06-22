@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "#0 Install Dependencies"
+echo
 ##################
 # install build dependencies
 #
@@ -9,6 +10,7 @@ sudo apt-get install nodejs git build-essential
 
 
 echo "#1 Build Source"
+echo
 ##################
 # build source 
 #
@@ -17,6 +19,7 @@ echo "#1 Build Source"
 
 
 echo "#2 Generate Configuration file"
+echo
 ##################
 # build source 
 #
@@ -24,7 +27,8 @@ echo "#2 Generate Configuration file"
 ./cjdroute --genconf >> conf.tmp || { echo "-> Config Gen failed (#2) : exiting now <-"; exit 1; }
 
 
-echo "#3 Add Public Peers to config file"
+echo -n "#3 Add Public Peers to config file"
+echo
 ##################
 # add public peers
 #
@@ -35,15 +39,17 @@ tail -n +69 conf.tmp >> cjdroute.conf
 
 
 echo "#4 run cjdroute"
+echo
 ##################
 # start cjdroute
 #  #remove conf.tmp#
 ##################
 rm conf.tmp
-./cjdroute < cjdroute.conf || { echo "-> running cjdroute failed; check cjdroute.conf (#4) : exiting now <-"; exit 1; }
+sudo ./cjdroute < cjdroute.conf || { echo "-> running cjdroute failed; check cjdroute.conf (#4) : exiting now <-"; exit 1; }
 
 
 echo "#5 ping uppit.us"
+echo 
 ##################
 # ping uppit.us
 #  
