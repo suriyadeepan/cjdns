@@ -1,0 +1,21 @@
+        "76.105.229.241:13982" : {
+            "password" : "general_public_1985",
+            "publicKey" : "7pu8nlqphgd1bux9sdpjg0c104217r3b3m1bvmdtbn7uwcj5cky0.k"
+          },
+          "98.162.176.55:64054" : {
+            "password" : "null",
+            "publicKey" : "trzcvx9wyvyxd9hhzusf9pwqdmngcgbxd36b8w6fjgfub3t9gw90.k"
+          },
+          "199.180.252.227:19071" : {
+            "password" : "public_JFh4rX0R1jm6a7eKWCzD",
+            "publicKey" : "425bcpr9ns0jpuh9ffx1lbbktkd3tpln16jzs9sgbjdkvfg25zv0.k"
+          },
+          "91.219.237.220:28049" : {
+            "password" : "meshnet-Ju7VPtiAu4ZI4LRNv2uyDqPGROMupY",
+            "publicKey" : "8xqd9u22cstvd7jz5w694ngug113pt8wt25wc0cv44hzb0cmgj70.k"
+          },
+          "144.76.202.253:55765":
+          {
+	    "password":"public_access",
+	    "publicKey":"bcsfp3ycx5y344y4z04jy7ntqz95006hj6rmc51y6d83ymrcq4k0.k"
+          },
