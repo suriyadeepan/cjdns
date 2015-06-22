@@ -6,7 +6,15 @@ echo
 # install build dependencies
 #
 ##################
-sudo apt-get install nodejs git build-essential
+if [ -f /etc/debian_version ]; then 
+    sudo apt-get install nodejs git build-essential
+elif [ -f /etc/redhat-release ]; then 
+    sudo dnf groupinstall "Development Tools"
+    sudo dnf install nodejs
+else 
+    echo "Try installing packages manually. Not a deb / rpm based distribution"
+    exit
+fi
 
 
 echo "#1 Build Source"
